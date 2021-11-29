@@ -69,6 +69,10 @@ const prodPara = main4.querySelector('p');
 const main5 = main4.nextElementSibling;
 const visTitle = main5.querySelector('h4');
 const visPara = main5.querySelector('p');
+const contact = document.querySelector('.contact h4');
+const address = contact.nextElementSibling;
+const phone = address.nextElementSibling;
+const email = phone.nextElementSibling;
 const footerLink = document.querySelector('footer a');
 
 //  Add text contents
@@ -90,6 +94,10 @@ prodTitle.textContent = siteContent["main-content"]["product-h4"];
 prodPara.textContent = siteContent["main-content"]["product-content"];
 visTitle.textContent = siteContent["main-content"]["vision-h4"];
 visPara.textContent = siteContent["main-content"]["vision-content"];
+contact.textContent = siteContent.contact["contact-h4"];
+address.textContent = siteContent.contact.address;
+phone.textContent = siteContent.contact.phone;
+email.textContent = siteContent.contact.email;
 footerLink.textContent = siteContent.footer.copyright;
 
 // Add class names
