@@ -42,14 +42,13 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 console.log('project wired!')
 
 // Creating selectors
-
 const navLinks = document.querySelectorAll('nav a');
 const navLink1 = document.querySelector('nav a:nth-of-type(1)');
-const navLink2 = document.querySelector('nav a:nth-of-type(2)');
-const navLink3 = document.querySelector('nav a:nth-of-type(3)');
-const navLink4 = document.querySelector('nav a:nth-of-type(4)');
-const navLink5 = document.querySelector('nav a:nth-of-type(5)');
-const navLink6 = document.querySelector('nav a:nth-of-type(6)');
+const navLink2 = navLink1.nextElementSibling;
+const navLink3 = navLink2.nextElementSibling;
+const navLink4 = navLink3.nextElementSibling;
+const navLink5 = navLink4.nextElementSibling;
+const navLink6 = navLink5.nextElementSibling;
 const logoImg = document.querySelector('#logo-img');
 const ctaText = document.querySelector('h1');
 const ctaButton = document.querySelector('.cta-text button');
@@ -67,9 +66,11 @@ navLink4.textContent = siteContent.nav["nav-item-4"];
 navLink5.textContent = siteContent.nav["nav-item-5"];
 navLink6.textContent = siteContent.nav["nav-item-6"];
 
+footerLink.textContent = siteContent.footer.copyright;
+
 // Add class names
-navLinks.className = 'italic';
-footerLink.className = 'bold';
+footerLink.classList.add('bold');
+navLinks.forEach(link => link.classList.add('italic'));
 
 // Add image sources
 logoImg.src = siteContent.images['logo-img'];
