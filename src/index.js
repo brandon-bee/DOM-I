@@ -53,9 +53,22 @@ const logoImg = document.querySelector('#logo-img');
 const ctaText = document.querySelector('h1');
 const ctaButton = document.querySelector('.cta-text button');
 const ctaImg = document.querySelector('#cta-img');
-
+const main1 = document.querySelector('.top-content .text-content:nth-of-type(1)');
+const featTitle = main1.querySelector('h4');
+const featPara = main1.querySelector('p');
+const main2 = main1.nextElementSibling;
+const aboutTitle = main2.querySelector('h4');
+const aboutPara = main2.querySelector('p');
 const midImg = document.querySelector('#middle-img');
-
+const main3 = document.querySelector('.bottom-content .text-content:nth-of-type(1)');
+const servTitle = main3.querySelector('h4');
+const servPara = main3.querySelector('p');
+const main4 = main3.nextElementSibling;
+const prodTitle = main4.querySelector('h4');
+const prodPara = main4.querySelector('p');
+const main5 = main4.nextElementSibling;
+const visTitle = main5.querySelector('h4');
+const visPara = main5.querySelector('p');
 const footerLink = document.querySelector('footer a');
 
 //  Add text contents
@@ -65,7 +78,18 @@ navLink3.textContent = siteContent.nav["nav-item-3"];
 navLink4.textContent = siteContent.nav["nav-item-4"];
 navLink5.textContent = siteContent.nav["nav-item-5"];
 navLink6.textContent = siteContent.nav["nav-item-6"];
-
+ctaText.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+featTitle.textContent = siteContent["main-content"]["features-h4"];
+featPara.textContent = siteContent["main-content"]["features-content"];
+aboutTitle.textContent = siteContent["main-content"]["about-h4"];
+aboutPara.textContent = siteContent["main-content"]["about-content"];
+servTitle.textContent = siteContent["main-content"]["services-h4"];
+servPara.textContent = siteContent["main-content"]["services-content"];
+prodTitle.textContent = siteContent["main-content"]["product-h4"];
+prodPara.textContent = siteContent["main-content"]["product-content"];
+visTitle.textContent = siteContent["main-content"]["vision-h4"];
+visPara.textContent = siteContent["main-content"]["vision-content"];
 footerLink.textContent = siteContent.footer.copyright;
 
 // Add class names
