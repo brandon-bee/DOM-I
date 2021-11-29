@@ -44,6 +44,12 @@ console.log('project wired!')
 // Creating selectors
 
 const navLinks = document.querySelectorAll('nav a');
+const navLink1 = document.querySelector('nav a:nth-of-type(1)');
+const navLink2 = document.querySelector('nav a:nth-of-type(2)');
+const navLink3 = document.querySelector('nav a:nth-of-type(3)');
+const navLink4 = document.querySelector('nav a:nth-of-type(4)');
+const navLink5 = document.querySelector('nav a:nth-of-type(5)');
+const navLink6 = document.querySelector('nav a:nth-of-type(6)');
 const logoImg = document.querySelector('#logo-img');
 const ctaText = document.querySelector('h1');
 const ctaButton = document.querySelector('.cta-text button');
@@ -54,6 +60,12 @@ const midImg = document.querySelector('#middle-img');
 const footerLink = document.querySelector('footer a');
 
 //  Add text contents
+navLink1.textContent = siteContent.nav["nav-item-1"];
+navLink2.textContent = siteContent.nav["nav-item-2"];
+navLink3.textContent = siteContent.nav["nav-item-3"];
+navLink4.textContent = siteContent.nav["nav-item-4"];
+navLink5.textContent = siteContent.nav["nav-item-5"];
+navLink6.textContent = siteContent.nav["nav-item-6"];
 
 // Add class names
 navLinks.className = 'italic';
