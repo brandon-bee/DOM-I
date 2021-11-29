@@ -40,3 +40,26 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+// Creating selectors
+
+const navLinks = document.querySelectorAll('nav a');
+const logoImg = document.querySelector('#logo-img');
+const ctaText = document.querySelector('h1');
+const ctaButton = document.querySelector('.cta-text button');
+const ctaImg = document.querySelector('#cta-img');
+
+const midImg = document.querySelector('#middle-img');
+
+const footerLink = document.querySelector('footer a');
+
+//  Add text contents
+
+// Add class names
+navLinks.className = 'italic';
+footerLink.className = 'bold';
+
+// Add image sources
+logoImg.src = siteContent.images['logo-img'];
+ctaImg.src = siteContent.images['cta-img'];
+midImg.src = siteContent.images['accent-img'];
