@@ -40,3 +40,71 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
 };
 
 console.log('project wired!')
+
+// Creating selectors
+const navLinks = document.querySelectorAll('nav a');
+const navLink1 = document.querySelector('nav a:nth-of-type(1)');
+const navLink2 = navLink1.nextElementSibling;
+const navLink3 = navLink2.nextElementSibling;
+const navLink4 = navLink3.nextElementSibling;
+const navLink5 = navLink4.nextElementSibling;
+const navLink6 = navLink5.nextElementSibling;
+const logoImg = document.querySelector('#logo-img');
+const ctaText = document.querySelector('h1');
+const ctaButton = document.querySelector('.cta-text button');
+const ctaImg = document.querySelector('#cta-img');
+const main1 = document.querySelector('.top-content .text-content:nth-of-type(1)');
+const featTitle = main1.querySelector('h4');
+const featPara = main1.querySelector('p');
+const main2 = main1.nextElementSibling;
+const aboutTitle = main2.querySelector('h4');
+const aboutPara = main2.querySelector('p');
+const midImg = document.querySelector('#middle-img');
+const main3 = document.querySelector('.bottom-content .text-content:nth-of-type(1)');
+const servTitle = main3.querySelector('h4');
+const servPara = main3.querySelector('p');
+const main4 = main3.nextElementSibling;
+const prodTitle = main4.querySelector('h4');
+const prodPara = main4.querySelector('p');
+const main5 = main4.nextElementSibling;
+const visTitle = main5.querySelector('h4');
+const visPara = main5.querySelector('p');
+const contact = document.querySelector('.contact h4');
+const address = contact.nextElementSibling;
+const phone = address.nextElementSibling;
+const email = phone.nextElementSibling;
+const footerLink = document.querySelector('footer a');
+
+//  Add text contents
+navLink1.textContent = siteContent.nav["nav-item-1"];
+navLink2.textContent = siteContent.nav["nav-item-2"];
+navLink3.textContent = siteContent.nav["nav-item-3"];
+navLink4.textContent = siteContent.nav["nav-item-4"];
+navLink5.textContent = siteContent.nav["nav-item-5"];
+navLink6.textContent = siteContent.nav["nav-item-6"];
+ctaText.textContent = siteContent.cta.h1;
+ctaButton.textContent = siteContent.cta.button;
+featTitle.textContent = siteContent["main-content"]["features-h4"];
+featPara.textContent = siteContent["main-content"]["features-content"];
+aboutTitle.textContent = siteContent["main-content"]["about-h4"];
+aboutPara.textContent = siteContent["main-content"]["about-content"];
+servTitle.textContent = siteContent["main-content"]["services-h4"];
+servPara.textContent = siteContent["main-content"]["services-content"];
+prodTitle.textContent = siteContent["main-content"]["product-h4"];
+prodPara.textContent = siteContent["main-content"]["product-content"];
+visTitle.textContent = siteContent["main-content"]["vision-h4"];
+visPara.textContent = siteContent["main-content"]["vision-content"];
+contact.textContent = siteContent.contact["contact-h4"];
+address.textContent = siteContent.contact.address;
+phone.textContent = siteContent.contact.phone;
+email.textContent = siteContent.contact.email;
+footerLink.textContent = siteContent.footer.copyright;
+
+// Add class names
+footerLink.classList.add('bold');
+navLinks.forEach(link => link.classList.add('italic'));
+
+// Add image sources
+logoImg.src = siteContent.images['logo-img'];
+ctaImg.src = siteContent.images['cta-img'];
+midImg.src = siteContent.images['accent-img'];
